@@ -30,6 +30,20 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.7);
+  /* Somehow this removes the nav menu from the sceen */
+  transform: translateX(-100vw);
+}
+
+/* Slowly brings the bars in once nav is pressed */
+.overlay-slide-right {
+  transition: all 0.4s ease-in-out;
+  transform: translateX(0);
+}
+
+/* Slowly brings the bars out once the nav is pressed */
+.overlay-slide-left {
+  transition: all 0.8s ease-in-out;
+  transform: translateX(-100vw);
 }
 
 /* Nav Menu Items */
